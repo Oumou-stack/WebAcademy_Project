@@ -13,25 +13,30 @@ body{
 .cta_button{
     width: 10vw;
     height: 6vh;
-    background: #fa7abe;
+    background: #d3b6fa;
     color: #FFF6FE;
     border-radius: 1em;
     border: none;
     font-size: 1em;
 }
 
-.see_all{
+.cta_button:hover{
+    background: linear-gradient(#d1b2fa,#b57dfe);
+    color: #ffffff;
+}
+
+.cta_button2{
     width: 10vw;
     height: 6vh;
-    background: #f95fb1;
+    background: #f878bc;
     color: #FFF6FE;
     border-radius: 1em;
     border: none;
     font-size: 1em;
 }
 
-.see_all:hover, .cta_button:hover{
-    background: linear-gradient(180deg, #FF1493, #f95fb1);
+.cta_button2:hover{
+    background: linear-gradient(#f878bc,#FF1493);
     color: #ffffff;
 }
 
@@ -66,6 +71,11 @@ nav a{
     text-decoration: none;
     color: #FFF6FE;
     text-shadow: #000 0px 0px 5px;
+}
+
+nav a:hover{
+    color: #f878bc;
+    text-shadow: #870C92 0px 0px 5px;
 }
 
 .logo_container img{
@@ -250,7 +260,7 @@ header{
 #receipes{
     display: flex;
     margin: 6em 4em;
-    box-shadow: 0px 6px 100px #c294ffae;
+    box-shadow: 9px 7px 16px 2px #c294ffae;
 }
 
 #receipes img{
@@ -261,18 +271,30 @@ header{
 
 .receipes_content{
     background: #C394FF76;
+    color: #ffffff;
     width: 50%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2em;
 }
 
-.receipes_btn{
+.receipes_content h2{
+    font-size: 3em;
+    text-shadow: #870C92 0px 5px 5px;
+}
+
+.receipes_content p{
+    font-size: 1em;
+    text-shadow: #870C92 0px 5px 5px;
+}
+
+/*.receipes_btn{
     width: 10vw;
     height: 6vh;
-    background: #FF1493;
+    background: #C394FF;
     color: #FFF6FE;
     border-radius: 1em;
     border: none;
@@ -280,9 +302,9 @@ header{
 }
 
 .receipes_btn:hover{
-    background: #FFF6FE;
-    color: #FF1493;
-}
+    background: #b57dfe;
+    color: #ffffff;
+}*/
 
 #boxes{
     display: flex;
@@ -462,7 +484,6 @@ footer h3{
 .footer_content{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 8em;
 }
 
