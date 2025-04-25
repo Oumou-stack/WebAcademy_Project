@@ -1,0 +1,381 @@
+h2{
+    font-family: var(--font-primary);
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h1-font-size);
+    color: var(--dark-pink);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/images/mocktails_landscape.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    box-shadow: 0px -11px 100px #C394FF;
+}
+
+.hero_filter{
+    background: rgba(0, 0, 0, 0.137);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    position: absolute;
+    top: 22em;
+}
+
+.hero_content h1{
+    width: 24em;
+    font-family: var(--font-primary);
+    font-weight: var(--h1-font-weight);
+    font-size: var(--h1-font-size);
+    color: #ffffff;
+    text-align: center;
+    -webkit-text-stroke: #ff1493 1px;
+    text-shadow: #ff1493 0px 0px 5px;
+}
+
+.hero_content h2{
+    width: 24em;
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-weight: var(--h1-font-weight);
+    font-size: var(--h1-font-size);
+    color: #ffffff;
+    text-align: center;
+    -webkit-text-stroke: #ff1493 1px;
+}
+
+.hero_content img{
+    width: 14vw;
+    height: 25vh;
+}
+
+#bests_sellers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 5em;
+}
+
+#bests_sellers h3{
+    font-family: var(--font-primary);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+}
+
+.product_list{
+    display: flex;
+    gap: 8em;
+    margin: 8em 0em 5em 0em;
+}
+
+.product_card{
+    position: relative;
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.product_card:hover{
+    transform: scale(1.05);
+}
+
+.product_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18em;
+    gap: 1em;
+}
+
+.product_info p{
+    font-size: 0.9em;
+}
+
+.product_card img{
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    top: 5em;
+}
+
+.circle{
+    position: absolute;
+    top: 3rem;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.add_btn{
+    width: 10vw;
+    height: 6vh;
+    color: #ffffff;
+    border-radius: 1em;
+    border: none;
+    font-size: var(--p-body-size);
+}
+
+.tropical{
+    color: #AC461A;
+    background: linear-gradient(#FFF6FE50, #EFB817, #FFF6FE50 );
+}
+
+.tropical_circle{
+    background: linear-gradient(#FE922A, #FFF6FE);
+}
+
+.tropical .add_btn{
+    background: #EFB817;
+    color: #FFF6FE;
+}
+
+.tropical .add_btn:hover{
+    background: linear-gradient(#f5d574, #EFB817);
+    
+}
+
+.barbapop{
+    color: #dc0f7c;
+    background: linear-gradient(#FFF6FE50, #FFC4FB, #FFF6FE50 );
+}
+
+.barbapop_circle{
+    background: linear-gradient(#FF1493, #FFF6FE);
+}
+
+.barbapop .add_btn{
+    background: #f854ab;
+    color: #FFF6FE;
+}
+
+.barbapop .add_btn:hover{
+    background: linear-gradient(#FFC4FB,#FF1493);
+    
+}
+
+.jasmine{
+    color: #438710;
+    background: linear-gradient(#FFF6FE50, #8DBFA7, #FFF6FE50 );
+}
+
+.jasmine_circle{
+    background: linear-gradient(#438710, #FFF6FE);
+}
+
+.jasmine .add_btn{
+    background: #438710;
+    color: #FFF6FE;
+}
+
+.jasmine .add_btn:hover{
+    background: linear-gradient(#8DBFA7, #438710);
+    color: #FFF6FE;
+}
+
+#receipes{
+    display: flex;
+    margin: 6em 4em;
+    box-shadow: 9px 7px 16px 2px #c294ffae;
+    transition: all 0.5s;
+}
+
+#receipes:hover{
+    transform: scale(1.04);
+}
+
+#receipes img{
+    width: 55%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.receipes_content{
+    background: #C394FF76;
+    color: #ffffff;
+    width: 55%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.receipes_content h2{
+    color: var(--white);
+    font-size: var(--h1-font-size);
+    text-shadow: var(--pink) 0px 5px 5px;
+}
+
+.receipes_content p{
+    font-size: 1.2em;
+}
+
+.receipes_content .cta_button2{
+    width: 10vw;
+    height: 6vh;
+    background: var(--light-pink);
+    color: var(--white);
+    border-radius: 1em;
+    border: none;
+    font-size: var(--p-body-size);
+}
+
+.receipes_content .cta_button2:hover{
+    background: linear-gradient(#f878bc,#FF1493);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+#boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 5em;
+}
+
+#boxes h2{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#boxes .product_list{
+   gap: 7em;
+}
+
+.boxes_card{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.boxes_card:hover{
+    transform: scale(1.05);
+}
+
+.boxes_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.boxes_info h3{
+    font-family: var(--font-primary);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+}
+
+.boxes_info p{
+    font-size: var(--p-body-size);
+}
+
+.boxes_card img{
+    width: 18vw;
+    height: 38vh;
+}
+
+.add_btn{
+    width: 12vw;
+    height: 6vh;
+    font-size: 0.8em;
+}
+
+.cta_btn2 #boxes{
+    margin: 5em 0em;
+}
+
+.decouverte{
+    background: linear-gradient(#FFF6FE50, #E5A582, #FFF6FE50 );
+    color: #AC461A;
+}
+
+ .decouverte .add_btn {
+    background: #fbcfa7;
+    color: #ffffff;
+    border-radius: 1em;
+    border: none;
+}
+
+.decouverte .add_btn:hover{
+    background: linear-gradient(#f5d574, #E5A582);
+    color: #FFF6FE;
+}
+
+.felicitee{
+    background: linear-gradient(#FFF6FE50, #FF149350, #FFF6FE50 );
+    color: #870C92;
+}
+
+.felicitee .add_btn{
+    background: #fc9fd0;
+    color: #ffffff;
+    border-radius: 1em;
+    border: none;
+}
+
+.felicitee .add_btn:hover{
+    background: linear-gradient(#f878bc, #FF1493);
+    color: #FFF6FE;
+}  
+
+.fiesta{
+    background: linear-gradient(#FFF6FE50, #00B8D470, #FFF6FE50 );
+    color: #0A8A9E;
+}
+
+.fiesta .add_btn{
+    background: #7dd3e0;
+    color: #ffffff;
+    border-radius: 1em;
+    border: none;
+}  
+
+.fiesta .add_btn:hover{
+    background: linear-gradient(#87dfec, #00B8D4);
+    color: #FFF6FE;
+}
+
+/*modifier la couleur de la newsletter*/
+#newsletter{
+    background: #C394FF50;
+    box-shadow: 0px 20px 100px #C394FF;
+}
+
+#newsletter h2{
+    text-shadow: #ab6bff 0px 5px 5px;
+}
+
+#newsletter p{
+    color: #870c92;
+}
+
+.nws_btn{
+    background: #ab6bff;  
+}
+
+.nws_btn:hover{
+    background: #C394FF;
+}
+

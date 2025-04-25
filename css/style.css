@@ -1,0 +1,361 @@
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+    
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('/assets/fonts/Cooper-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root{
+    --font-primary: 'Cooper', serif;
+    --font-secondary: 'Rubkit', sans-serif;
+        
+    
+    --h1-font-size: 3rem;
+    --h1-font-weight: 900;
+    --h1-line-height: 1.2;
+
+    --h2-font-size: 2rem;
+    --h2-font-weight: 800;
+    --h2-line-height: 1.3;
+
+    --h3-font-size: 1.5rem;
+    --h3-font-weight: 700;
+    --h3-line-height: 1.4;
+
+    --h4-font-size: 1.3rem;
+    --h4-font-weight: 600;
+    --h4-line-height:1.5;
+
+    --p-body-size: 1rem;
+    --p-font-family: 'Rubkit', sans-serif;
+    --p-font-weight: 500;
+    --p-line-height: 1.6;
+
+    --body-bg-color: #FFF6FE;
+    --nav-bg-color: #C394FF50;
+    
+    --purple: #C394FF;
+    --light-purple: #d3b6fa;
+    --dark-pink: #FF1493;
+    --pink: #e92e97;
+    --light-pink: #f878bc;
+    --green: #438710;
+    --light-green: #8DBFA7;
+    --orange: #FE922A;
+    --dark-orange: #AC461A;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--body-bg-color);
+    font-family: var(--font-secondary);
+}
+
+nav{
+    position: relative;
+    background: var(--nav-bg-color);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-primary);
+    font-weight: var(--h2-font-weight);
+    font-size: 1.2em;
+}
+
+.nav_list_left{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+.nav_list_left li{
+    width: 6vw;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--pink);
+}
+
+nav a:hover{
+    color: var(--light-pink);
+}
+
+.logo_container img{
+    width: 8vw;
+    height: 15vh;
+    padding-right: 6em;
+}
+
+.nav_list_right{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+   
+}
+
+/*.cta_button{
+    width: 10vw;
+    height: 6vh;
+    background: #d3b6fa;
+    color: #FFF6FE;
+    border-radius: 1em;
+    border: none;
+    font-size: var(--p-body-size);
+}
+
+.cta_button:hover{
+    background: linear-gradient(#d1b2fa,#b57dfe);
+    color: #ffffff;
+}*/
+
+.cta_btn{
+    width: 10vw;
+    height: 6vh;
+    background: var(--dark-pink);
+    color: #FFF6FE;
+    border-radius: 1em;
+    border: none;
+    font-size: var(--p-body-size);
+}
+
+.cta_btn:hover{
+    background: linear-gradient(#f878bc,#FF1493);
+    transform: scale(1.05);
+}
+
+#newsletter{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+   align-items: center;
+    height: 50vh;
+    margin: 18em 0em 15em 0em;
+}
+
+.newsletter_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5em;
+}
+
+.newsletter_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.newsletter_title h2{
+    font-size: var(--h1-font-size);
+    font-weight: var(--h2-font-weight);
+    color: var(--white);
+}
+
+.newsletter_title p{
+    font-size: 1.var(--p-body-size);
+}
+
+#newsletter img{
+    width: 15vw;
+    height: 40vh;
+}
+
+.nws_form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    padding: 2em 0em;
+    font-size: 1.var(--p-body-size);
+}
+
+.nws_form input{
+    width: 40vw;
+    height: 6vh;
+    padding-left: 1em;
+    border: none;
+    border-radius: 0.5em 0em 0em 0.5em;
+}
+
+.nws_btn{
+    width: 10vw;
+    height: 6.2vh;
+    color: #FFF6FE;
+    border: none;
+    border-radius: 0em 0.5em 0.5em 0em;
+}
+
+.nws_btn:hover{
+    background: #C394FF;
+    color: #ffffff;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 78vh;
+}
+
+footer h3{
+    font-family: var(--font-primary) ;
+    font-size: var(--h2-font-size);
+    font-weight: var(--h3-font-weight);
+    color: var(--dark-pink);
+}
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.socials_content{
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer_content img{
+    width: 20vw;
+    height: 42vh;
+}
+
+.socials{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.socials .fa-brands{
+    font-size: 1.8em;
+    color: var(--dark-pink);
+}
+
+.socials .fa-brands:hover{
+    color: #f95fb1;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: flex-end;
+    gap: 2em;
+    text-align: end;
+}
+
+.footer_links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    list-style: none;
+}
+
+.footer_links a{
+    font-size: var(--p-body-size);
+    text-decoration: none;
+    color: black;
+}
+
+.footer_links a:hover{
+    color: var(--dark-pink);
+}
+
+.copy{
+    font-size: 0.9em;
+    border-top: #000000 1px solid;
+    width: 60vw;
+    padding: 1em 0em 0em;
+    text-align: center;
+}
