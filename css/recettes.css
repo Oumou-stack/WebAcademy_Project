@@ -1,33 +1,227 @@
-.hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+h2{
+    font-family: var(--font-primary);
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h1-font-size);
+    margin: 1em 0em;
+    padding: 0.5em 0em;
 }
 
-.hero video{
+.hero{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 85vh;
+    background-image: url(../assets/Images/receipe/recettes_bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5em;
+}  
+
+.hero_filter{
+    background: rgba(0, 0, 0, 0.071);
     position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 85vh;
+    width: 100%;
+}
+
+.hero h2{
+    font-family: var(--font-primary);
+    font-weight: var(--h1-font-weight);
+    font-size: 2.5em;
+    color: var(--white);
+    -webkit-text-stroke: var(--dark-blue) 1px;
+    width: 30vw;
+    height: 29vh;
+    padding: 5em 2em 0em 0em;
+}
+
+.h2_filter{
+    position: absolute;
+    margin: 3em 0em 0em;
+    background: linear-gradient(#fff6fe, #fff6fe00, #fff6fe00, #fff6fe);
+    width: 100%;
+    height: 18vh;
+    z-index: 1;
+}
+
+#exotiques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exotique{
+    background: #FE922A50;
+}
+
+#exotiques h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(40deg, #8AC64A -15.55%, #CCDA37 12.65%, #FF9700 41.59%, #f9ef58 105.59%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: var(--white);
     z-index: -1;
 }
 
-.exotique_cards{
+#sucrees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sucre {
+    background-color: #f878bc50;
+}
+
+#sucrees h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(252deg,rgba(255, 20, 147, 0.46) 41.59%, rgba(192, 231, 210, 0.53) 88.59%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: var(--white);
+    z-index: -1;
+}
+
+#petillants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petillant {
+    background-color: #00B8D450;
+}
+
+#petillants h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(252deg,#7EB3FF 41.59%, #8BDDFE 88.59%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: var(--white);
+    z-index: -1;
+}
+
+#acidules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acide {
+    background-color: #F7BA5050;
+}
+
+#acidules h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(252deg,#F87C62 41.59%, #F7BA50 88.59%);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    color: var(--white);
+    z-index: -1;
+}
+
+.cards{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    padding: 5em 0;
+    gap: 5em;
 }
 
 .card{
-    width: 20vw;
-    height: 50vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19vw;
+    height: 70vh ;
     border-radius: 16px;
-background: #FFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-/* Shadow/shadow-sm */
-box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card h3{
+    font-family: var(--font-primary);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    margin-bottom: 0.5em;
+}
+
+.card p{
+    font-size: 0.7em;
+}
+
+.card .time{
+    font-size: 1em;
+    font-family: var(--font-primary);
+    font-weight: var(--h2-font-weight);
+}
+
+.card img{
+    border-radius: 0.5em;
+    margin-top: 0.6em;
+    width: 18vw;
+    height: 49vh;
+    object-fit: cover;
+}
+
+.infos_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    padding: 0.8em 1em 0em;
+}
+
+.card_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note{
+    display: flex;
+    gap: 0.5em;
+    height: 1.5em;
+    align-items: center;
+}
+
+.note .fa-solid{
+    font-size: 0.7em;
+    color: #FDC040;
+}
+
+.note p{
+    color: gray;
+}
+
+
+
+
+
+
+
+#newsletter{
+    background: #00B8D450;
+    box-shadow: 0px 20px 100px #00B8D447;
+
+}
+
+.nws_btn{
+    background: var(--dark-blue);
+}
+
+.nws_btn:hover{
+    background: var(--blue);
 }

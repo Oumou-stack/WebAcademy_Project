@@ -85,6 +85,9 @@
     --light-green: #8DBFA7;
     --orange: #FE922A;
     --dark-orange: #AC461A;
+    --blue: #00B8D4;
+    --dark-blue: #0A8A9E;
+
     --white: #ffffff;
     --black: #000000;
 }
@@ -197,11 +200,14 @@ nav a:hover{
     border-radius: 1em;
     border: none;
     font-size: var(--p-body-size);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .cta_btn:hover{
     background: linear-gradient(#f878bc,#FF1493);
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #newsletter{
@@ -231,6 +237,7 @@ nav a:hover{
 }
 
 .newsletter_title h2{
+    font-family: var(--font-primary);
     font-size: var(--h1-font-size);
     font-weight: var(--h2-font-weight);
     color: var(--white);

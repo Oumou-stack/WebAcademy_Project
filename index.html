@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="https://use.typekit.net/qef0qll.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <nav>
             <ul class="nav_list_left">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="/html/boutique.html">Boutique</a></li>
-                <li><a href="/html/recettes.html">Recettes</a></li>
+                <li><a href="html/boutique.html">Boutique</a></li>
+                <li><a href="html/recettes.html">Recettes</a></li>
             </ul>
 
             <div class="logo_container">
@@ -22,8 +23,8 @@
             </div>
 
             <ul class="nav_list_right">
-                <li><a href="/html/apropos.html">A propos</a></li>
-                <li><a href="html/panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="html/apropos.html">A propos</a></li>
+                <li><a href="/ml/panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
             
@@ -32,13 +33,13 @@
         <header id="hero">
             <span class="hero_filter"></span>
             <div class="hero_content">
-                <h1>Une pincée de poudre,</h1>
-                <h2>un océan de saveurs.</h2>
+                <h1 data-aos="fade-left" data-aos-duration="1000">Une pincée de poudre,</h1>
+                <h2 data-aos="fade-right" data-aos-duration="1000">un océan de saveurs.</h2>
             </div>
         </header>
         
         <section id="bests_sellers">
-            <h2>Nos meilleures ventes</h2>
+            <h2 data-aos="fade-left" data-aos-duration="1000">Nos meilleures ventes</h2>
             <div class="product_list">
                 <div class="product_card tropical">
                     <span class="circle tropical_circle"></span>
@@ -76,7 +77,7 @@
                 </div>
             </div>
 
-            <button class="cta_btn bests_sellers">Nos Mocktails</button>
+            <a href="/html/boutique.html"><button  class="cta_btn bests_sellers">Nos Mocktails</button></a>
         </section>
 
         <section id="receipes">
@@ -84,12 +85,12 @@
             <div class="receipes_content">
                 <h2>Découvrez nos recettes</h2>
                 <p>Des recettes de mocktails à réaliser chez vous avec nos produits.</p>
-                <button class="cta_btn receipes">Nos recettes</button>
+                <a href="/html/recettes.html"><button  class="cta_btn receipes">Nos recettes</button></a>
             </div>
         </section>
 
         <section id="boxes">
-            <h2>Nos boxes</h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000">Nos boxes</h2>
             <div class="product_list">
                 <div class="boxes_card decouverte">
                     <img src="/assets/images/Mocktails_Box.png" alt="Box découverte">
@@ -125,7 +126,7 @@
 
             </div>
 
-            <button class="cta_btn Boxes">Nos Boxes</button>
+            <a href="/html/boutique.html"><button class="cta_btn Boxes">Nos Boxes</button></a>
         </section>
 
         <section id="newsletter">
@@ -172,11 +173,11 @@
                     <h3>Liens utiles</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="/html/boutique.html">Boutique</a></li>
-                        <li><a href="/html/apropos.html">A propos</a></li>
-                        <li><a href="/html/recettes.html">Recettes</a></li>
-                        <li><a href="/html/contact.html">Nous contacter</a></li>
-                        <li><a href="/html/faq.html">FAQ</a></li>
+                        <li><a href="html/boutique.html">Boutique</a></li>
+                        <li><a href="html/apropos.html">A propos</a></li>
+                        <li><a href="html/recettes.html">Recettes</a></li>
+                        <li><a href="html/contact.html">Nous contacter</a></li>
+                        <li><a href="html/faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 
@@ -184,5 +185,9 @@
             <p class="copy">&copy; 2025 Bathily Oumou Tous droits réservés - Pixie Powder - Aucune licorne ou fée n’a été blessé durant la production.</p>
         </footer>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init();
+    </script>
     </body>
 </html>

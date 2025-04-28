@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="/css/boutique.css">
     <link rel="stylesheet" href="https://use.typekit.net/qef0qll.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <nav>
         <ul class="nav_list_left">
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="../index.html">Accueil</a></li>
             <li><a href="/html/boutique.html">Boutique</a></li>
             <li><a href="/html/recettes.html">Recettes</a></li>
         </ul>
@@ -25,7 +26,7 @@
 
         <ul class="nav_list_right">
             <li><a href="/html/apropos.html">A propos</a></li>
-            <li><a href="/html/panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="html/panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </ul>
         
@@ -35,7 +36,7 @@
         <div class="hero_content">
           <span class="hero_filter"></span>
             <div class="hero_text">
-                <h2>Découvrez notre multitude de mocktails à emporter partout!</h2>
+                <h2 data-aos="fade-right" data-aos-duration="1000">Découvrez notre multitude de mocktails à emporter partout!</h2>
                 <!-- <p>Chez Pixie Powder, nous aimons le mélange des saveurs. Nos mocktails sont conçus pour apporter une touche de fraîcheur et d'originalité à chaque occasion. Que ce soit pour une fête, un pique-nique ou simplement pour se faire plaisir, nos sachets de mocktails sont là pour vous accompagner.</p> -->
                 <button class="cta_btn_boutique">Nos Mocktails</button>
             </div>
@@ -46,32 +47,30 @@
     <main>
         <section class="words_list">
             <ul class="carousel">
-                <span class="mini_circle"></span>
                 <li>Rafraichssant</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Doux</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Innovant</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Sucré</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Voyage</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Fruité</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Gourmand</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Original</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Fête</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Partage</li>
-                <span class="mini_circle"></span>
+                <i class="fa-solid fa-star"></i>
                 <li>Pétillant</li>
-                <span class="mini_circle"></span>
             </ul>
 
-            <ul aria-hidden class="group">
+            <!-- <ul aria-hidden class="group">
                
                 <li>Rafraichssant</li>
                 <span class="mini_circle"></span>
@@ -95,11 +94,11 @@
                 <span class="mini_circle"></span>
                 <li>Pétillant</li>
                 <span class="mini_circle"></span>
-            </ul>
+            </ul> -->
         </section>
 
         <section id="products">
-            <h2>Nos produits</h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000">Nos produits</h2>
             <div class="product_list">
                 <div class="product_card tropical">
                     <span class="circle tropical_circle"></span>
@@ -201,7 +200,7 @@
         </section>
 
         <section id="boxes">
-            <h2>Nos boxes</h2>
+            <h2 data-aos="fade-left" data-aos-duration="1000">Nos boxes</h2>
             <div class="product_list">
                 <div class="boxes_card decouverte">
                     <img src="/assets/images/Mocktails_Box.png" alt="Box découverte">
@@ -284,11 +283,11 @@
             <div class="footer_links">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
                     <li><a href="/html/boutique.html">Boutique</a></li>
                     <li><a href="/html/apropos.html">A propos</a></li>
                     <li><a href="/html/recettes.html">Recettes</a></li>
-                    <li><a href="/html/contact.html">Nous contacter</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                     <li><a href="/html/faq.html">FAQ</a></li>
                 </ul>
             </div>
@@ -297,5 +296,9 @@
         <p class="copy">&copy; 2025 Bathily Oumou Tous droits réservés - Pixie Powder - Aucune licorne ou fée n’a été blessé durant la production.</p>
     </footer>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init();
+    </script>
 </body>
 </html>
